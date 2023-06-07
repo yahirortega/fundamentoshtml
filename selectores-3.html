@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seudoclases y seudo elementos</title>
+    <style>
+        #container {
+            width: 50%;
+            display: flex;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            display: 115px;
+            justify-content: center;
+            align-items: center;
+        }
+        .item:hover {
+            background-color: aquamarine;
+        }
+        .item::first-letter {
+            color: red;
+        }
+        .item::after {
+            content: "  🍻";
+        }
+        .item:nth-child(even) {
+            border: 5px solid orange;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div class="item">Texto</div>
+        <div class="item">Texto</div>
+        <div class="item">Texto</div>
+        <div class="item">Texto</div>
+        <div class="item">Texto</div>
+    </div>
+    
+</body>
+</html>
